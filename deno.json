@@ -1,0 +1,33 @@
+{
+  "name": "@tls/clienthello",
+  "version": "0.0.7",
+  "exports": "./src/mod.ts",
+  "publish": {
+    "exclude": [
+      "dist/"
+    ]
+  },
+  "tasks": {
+    "test": "deno test",
+    "lint": "deno lint"
+  },
+  "lint": {
+    "include": [
+      "src/"
+    ],
+    "exclude": [
+      "dist/"
+    ],
+    "rules": {
+      "exclude": [
+        "no-slow-types",
+        "no-unused-vars"
+      ]
+    }
+  },
+  "imports": {
+    "@aicone/byte": "jsr:@aicone/byte@^0.8.6",
+    "@tls/enum": "jsr:@tls/enum@^0.9.7",
+    "@tls/extension": "jsr:@tls/extension@^0.6.0",
+  }
+}
