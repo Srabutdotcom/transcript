@@ -1,6 +1,6 @@
 {
-  "name": "@tls/clienthello",
-  "version": "0.0.7",
+  "name": "@tls/transcript",
+  "version": "0.0.1",
   "exports": "./src/mod.ts",
   "publish": {
     "exclude": [
@@ -27,7 +27,6 @@
   },
   "imports": {
     "@aicone/byte": "jsr:@aicone/byte@^0.8.6",
-    "@tls/enum": "jsr:@tls/enum@^0.9.7",
-    "@tls/extension": "jsr:@tls/extension@^0.6.0",
+    "@tls/enum": "jsr:@tls/enum@^0.9.7"
   }
 }
