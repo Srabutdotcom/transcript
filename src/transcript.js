@@ -30,7 +30,7 @@ export class Transcript {
          this.#handshakes.push(handshake)
          return
       }
-      if (handshake.isHRR) {
+      if (handshake.message.isHRR) {
          const hash = handshake?.message?.cipher?.hash ?? Cipher.from(handshake.subarray(39 + handshake.at(38))).hash
          const hashClientHello1 = hash.create().update(this.#handshakes[0]).digest();
          this.#handshakes[0] = unity(
