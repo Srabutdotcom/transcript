@@ -1,25 +1,25 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@aicone/byte@~0.8.6": "0.8.6",
-    "jsr:@noble/hashes@^1.7.2": "1.7.2",
-    "jsr:@tls/enum@~0.9.7": "0.9.7",
-    "npm:@noble/curves@^1.8.2": "1.8.2",
+    "jsr:@aicone/byte@~0.8.8": "0.8.8",
+    "jsr:@noble/hashes@^1.8.0": "1.8.0",
+    "jsr:@tls/enum@0.10": "0.10.0",
+    "npm:@noble/curves@^1.9.0": "1.9.0",
     "npm:@peculiar/x509@^1.12.3": "1.12.3",
     "npm:pvtsutils@^1.3.6": "1.3.6"
   },
   "jsr": {
-    "@aicone/byte@0.8.6": {
-      "integrity": "3fa9023527fa7c9590a073bf7fe966c6bf77f9424c3ac40d2ee03f58ff81bad8",
+    "@aicone/byte@0.8.8": {
+      "integrity": "b4e9891dae9b821cdf364a1615d40593bde1eac261afa3caaf6d2eae73601777",
       "dependencies": [
         "npm:pvtsutils"
       ]
     },
-    "@noble/hashes@1.7.2": {
-      "integrity": "537468975e88e1ab3f5a772657b7143bd37d754ee0f0306188c9da11e2f404df"
+    "@noble/hashes@1.8.0": {
+      "integrity": "b52a2fcb4d02f8d8137871564a31f1ee9e2b0d15eedabbf32d2f7333f0abc939"
     },
-    "@tls/enum@0.9.7": {
-      "integrity": "01eacc59fca70a9e9014b781097a60d463bbe100710f612fe2ceef7225524234",
+    "@tls/enum@0.10.0": {
+      "integrity": "cdb5c9a4ef9d120fc1b9d6013491b1caf992b45cb7b6970f2d669554956c7e4b",
       "dependencies": [
         "jsr:@aicone/byte",
         "jsr:@noble/hashes",
@@ -29,14 +29,14 @@
     }
   },
   "npm": {
-    "@noble/curves@1.8.2": {
-      "integrity": "sha512-vnI7V6lFNe0tLAuJMu+2sX+FcL14TaCWy1qiczg1VwRmPrpQCdq5ESXQMqUc2tluRNf6irBXrWbl1mGN8uaU/g==",
+    "@noble/curves@1.9.0": {
+      "integrity": "sha512-7YDlXiNMdO1YZeH6t/kvopHHbIZzlxrCV9WLqCY6QhcXOoXiNCMDqJIglZ9Yjx5+w7Dz30TITFrlTjnRg7sKEg==",
       "dependencies": [
         "@noble/hashes"
       ]
     },
-    "@noble/hashes@1.7.2": {
-      "integrity": "sha512-biZ0NUSxyjLLqo6KxEJ1b+C2NAx0wtDoFvCaXHGgUkeHzf3Xc1xKumFKREuT7f7DARNZ/slvYUwFG6B0f2b6hQ=="
+    "@noble/hashes@1.8.0": {
+      "integrity": "sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A=="
     },
     "@peculiar/asn1-cms@2.3.15": {
       "integrity": "sha512-B+DoudF+TCrxoJSTjjcY8Mmu+lbv8e7pXGWrhNp2/EGJp9EEcpzjBCar7puU57sGifyzaRVM03oD5L7t7PghQg==",
@@ -302,8 +302,8 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@aicone/byte@~0.8.6",
-      "jsr:@tls/enum@~0.9.7"
+      "jsr:@aicone/byte@~0.8.8",
+      "jsr:@tls/enum@0.10"
     ]
   }
 }
