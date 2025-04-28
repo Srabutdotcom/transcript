@@ -1,6 +1,6 @@
 {
   "name": "@tls/transcript",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "exports": "./src/mod.ts",
   "publish": {
     "exclude": [
@@ -26,7 +26,6 @@
     }
   },
   "imports": {
-    "@aicone/byte": "jsr:@aicone/byte@^0.8.8",
-    "@tls/enum": "jsr:@tls/enum@^0.10.0"
+    "@noble/hashes": "jsr:@noble/hashes@^1.8.0"
   }
 }

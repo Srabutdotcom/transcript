@@ -72,5 +72,10 @@ export class Transcript {
     * Get the Finished message from the client.
     */
    get clientFinishedMsg(): Uint8Array | null;
+
+   /**
+    * Get array of handshakes
+    */
+   get handshakes(): Uint8Array | null;
  }
  

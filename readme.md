@@ -1,5 +1,5 @@
 # TLS 1.3 Transcript Holder
-@version 0.0.3
+@version 0.0.4
 
 A JavaScript class that manages and validates the sequence of handshake messages in a TLS 1.3 protocol exchange.
 
