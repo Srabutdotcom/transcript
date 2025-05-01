@@ -56,7 +56,13 @@ export class Transcript {
    /**
     * Get the Certificate message (if present).
     */
+
    get certificateMsg(): Uint8Array | null;
+   
+   /**
+    * Get the Certificate message (if present).
+    */
+   get certificateRequestMsg(): Uint8Array | null;
  
    /**
     * Get the CertificateVerify message (if present).

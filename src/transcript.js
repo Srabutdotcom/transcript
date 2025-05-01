@@ -9,6 +9,7 @@ export class Transcript {
    #serverHelloMsg = null;
    #encryptExtsMsg = null;
    #certificateMsg = null;
+   #certificateRequestMsg = null;
    #certificateVerifyMsg = null;
    #serverFinishedMsg = null;
    #clientFinishedMsg = null;
@@ -71,6 +72,12 @@ export class Transcript {
             console.log('certificateMsg received');
             break;
          }
+         case 13: { // Certificate Request
+            if (this.#certificateRequestMsg) throw new Error(`Duplicate Certificate Request message`);
+            this.#certificateRequestMsg = handshake;
+            console.log('certificateRequestMsg received');
+            break;
+         }
          case 15: { // CertificateVerify
             if (this.#certificateVerifyMsg) throw new Error(`Duplicate CertificateVerify message`);
             this.#certificateVerifyMsg = handshake;
@@ -118,6 +125,9 @@ export class Transcript {
    }
    get certificateMsg() {
       return this.#certificateMsg
+   }
+   get certificateRequestMsg(){
+      return this.#certificateRequestMsg
    }
    get certificateVerifyMsg() {
       return this.#certificateVerifyMsg
